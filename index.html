@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilbao Surprise</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+    }
+    .hero {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.4;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+    .reveal {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);} 
+      to { opacity: 1; transform: translateY(0);} 
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media(min-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    }
+    .text {
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1561490457-1c6be3b6c8b5?q=80&w=2000&auto=format&fit=crop" />
+    <div class="hero-content">
+      <h1>Line ❤️</h1>
+      <p>
+        Jeg har en lille overraskelse til dig...<br><br>
+        Fra den 2. – 4. oktober kunne vi fx flyve til...
+      </p>
+    </div>
+  </div>
+
+  <div class="reveal">Bilbao</div>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Hvor vi kan bo 🏨</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>Hotel Tayko Bilbao</h3>
+            <p>Stilfuldt boutiquehotel midt i byen.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>Gran Hotel Domine</h3>
+            <p>Luksus med udsigt og rooftop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Mad & oplevelser 🍷</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>El Globo</h3>
+            <p>Fantastiske pintxos og vin.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>Nerua</h3>
+            <p>Michelin-oplevelse i topklasse.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Oplevelser 🌆</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1577988721442-a35d6efad87a?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>San Juan de Gaztelugatxe</h3>
+            <p>Spektakulær natur og udsigt.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>Casco Viejo</h3>
+            <p>Charmerende gamle gader.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Natur & romantik 🌿</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>Sopelana Strand</h3>
+            <p>Perfekt til solnedgang.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop">
+          <div class="overlay"></div>
+          <div class="text">
+            <h3>Bjergudsigter</h3>
+            <p>Fantastiske udsigter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
